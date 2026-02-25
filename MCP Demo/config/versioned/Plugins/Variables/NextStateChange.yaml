@@ -1,0 +1,10 @@
+Id: 2e58b809-0d4b-4dae-a68d-90320fd9ff3f
+InitialValue:
+  Value: 1
+  VariantType: System.Int64, System.Private.CoreLib
+  _clrType:
+  - inray.SDK.Data.YamlSerializer.YamlVariant, inray.SDK.Data
+Name: NextStateChange
+VariableType: Int64
+_clrType:
+- inray.OPCRouter.VariablesPlugIn.Config.Variable, inray.OPCRouter4.VariablesPlugIn

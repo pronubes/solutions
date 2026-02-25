@@ -1,0 +1,10 @@
+Id: 9708b690-0db8-40a0-9ff0-522adbb8346b
+InitialValue:
+  Value: 1
+  VariantType: System.Int64, System.Private.CoreLib
+  _clrType:
+  - inray.SDK.Data.YamlSerializer.YamlVariant, inray.SDK.Data
+Name: DrehzahlTrigger
+VariableType: Int64
+_clrType:
+- inray.OPCRouter.VariablesPlugIn.Config.Variable, inray.OPCRouter4.VariablesPlugIn

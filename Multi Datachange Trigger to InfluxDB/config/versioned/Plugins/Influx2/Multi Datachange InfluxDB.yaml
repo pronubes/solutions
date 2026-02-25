@@ -1,0 +1,14 @@
+AuthenticationMode: Basic
+Bucket: test01
+Changed: 2025-11-12T14:19:32.6536061Z
+Id: 2511121418-416619323-58016C87-0000F535
+InstanceName: Multi Datachange InfluxDB
+Organization: OPC_Test
+PasswordKey: ${influx_password_key}
+PlugInTypeID: 100000
+SavedInVersion: 5.5.5004.199
+Url: "${influx_url}"
+Username: admin
+UseSharedWriteApi: ${use_stacked_inserts}
+_clrType:
+- inray.OPCRouter.Influx2PlugIn.Config.Influx2PlugInConfig, inray.OPCRouter4.Influx2PlugIn

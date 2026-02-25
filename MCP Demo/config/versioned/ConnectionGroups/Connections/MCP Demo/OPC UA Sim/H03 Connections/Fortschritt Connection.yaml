@@ -1,0 +1,119 @@
+ChangedUtcTimestamp: 0001-01-01T00:00:00.0000000Z
+ConnectionLines:
+- ItemStart: 1341231685
+  ItemStop: 989648881
+- ItemStart: 1270236335
+  ItemStop: 420930304
+- ItemStart: 1808170954
+  ItemStop: 145377803
+PublishedUtcTimestamp: 0001-01-01T00:00:00.0000000Z
+SavedInVersion: 5.6.50.0
+TransferObjects:
+- BlockTime: ''
+  ChangedUTCTimestamp: 2023-09-28T08:04:40.4330000Z
+  ForceCycle: ''
+  Groups:
+  - Items:
+    - Direction: output
+      LocalId: 1032242223
+      Name: Value
+      _clrType:
+      - inray.OPCRouter.PlugIns.Shared.DataChangeTrigger.DatachangeTriggerItem, inray.OPCRouter.PlugIns.Shared
+  ItemAddress: trigger3
+  LocalId: 1903327650
+  PlugIn: VariablesPlugInConfig
+  PosX: 320
+  PosY: 140
+  TriggerType: OnEveryChange
+  _clrType:
+  - inray.OPCRouter.PlugIns.Shared.DataChangeTrigger.DatachangeTriggerConfigV2, inray.OPCRouter.PlugIns.Shared
+- ChangedUTCTimestamp: 2023-09-28T08:05:14.3050000Z
+  ConfigType: 3001
+  Groups:
+  - Items:
+    - ForceType: Default
+      LocalId: 1341231685
+      Name: bp=Objects/2:Maschinen/2:H03/2:Drehzahl;
+      OPCAddress: bp=Objects/2:Maschinen/2:H03/2:Drehzahl;
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    - ForceType: Default
+      LocalId: 1270236335
+      Name: bp=Objects/2:Maschinen/2:H03/2:Fortschritt;
+      OPCAddress: bp=Objects/2:Maschinen/2:H03/2:Fortschritt;
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    Name: Items
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcRegularItemsGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Value Timestamp
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcValueTimestampGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality-ID
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityIntGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality-String
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityStringGroup, inray.OPCRouter4.OPCPlugIn
+  LocalId: 2060087920
+  PlugIn: UAServer2408301209-223846937-1801FB34-00002707
+  PlugInType: 3100
+  PosX: 60
+  PosY: 360
+  _clrType:
+  - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
+- ChangedUTCTimestamp: 2023-09-28T08:05:39.6570000Z
+  Groups:
+  - Items:
+    - Direction: input
+      LocalId: 420930304
+      Name: Fortschritt
+    - Direction: input
+      LocalId: 989648881
+      Name: Drehzahl
+    Name: Variablen
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
+  - Items:
+    - Direction: output
+      LocalId: 1808170954
+      Name: Ausgabewert
+    Name: Ergebnis
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerResultGroup, inray.OPCRouter4.BasePlugIn
+  LocalId: 1610716025
+  PlugIn: BasePlugInConfig
+  PosX: 440
+  PosY: 360
+  StringToParse: MIN(IF(Drehzahl > 1, Fortschritt + 0.5, Fortschritt), 100)
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn
+- ChangedUTCTimestamp: 2023-09-28T08:07:45.7050000Z
+  ConfigType: 3001
+  Groups:
+  - Items:
+    - ForceType: Default
+      LocalId: 145377803
+      Name: bp=Objects/2:Maschinen/2:H03/2:Fortschritt;
+      OPCAddress: bp=Objects/2:Maschinen/2:H03/2:Fortschritt;
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    Name: Items
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcRegularItemsGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality-ID
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityIntGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality-String
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityStringGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Value Timestamp
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcValueTimestampGroup, inray.OPCRouter4.OPCPlugIn
+  LocalId: 117716234
+  PlugIn: UAServer2408301209-223846937-1801FB34-00002707
+  PlugInType: 3100
+  PosX: 920
+  PosY: 360
+  _clrType:
+  - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn

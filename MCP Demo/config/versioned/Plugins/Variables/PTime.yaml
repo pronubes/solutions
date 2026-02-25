@@ -1,0 +1,10 @@
+Id: 46cb0bc3-720f-422c-a3f4-4654396aabd2
+InitialValue:
+  Value: 0
+  VariantType: System.Int64, System.Private.CoreLib
+  _clrType:
+  - inray.SDK.Data.YamlSerializer.YamlVariant, inray.SDK.Data
+Name: PTime
+VariableType: Int64
+_clrType:
+- inray.OPCRouter.VariablesPlugIn.Config.Variable, inray.OPCRouter4.VariablesPlugIn

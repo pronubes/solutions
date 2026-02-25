@@ -1,0 +1,10 @@
+Id: 2137dc9f-3519-4c4c-9433-425a3bddcbd4
+InitialValue:
+  Value: 0
+  VariantType: System.Int64, System.Private.CoreLib
+  _clrType:
+  - inray.SDK.Data.YamlSerializer.YamlVariant, inray.SDK.Data
+Name: rampstate3
+VariableType: Int64
+_clrType:
+- inray.OPCRouter.VariablesPlugIn.Config.Variable, inray.OPCRouter4.VariablesPlugIn

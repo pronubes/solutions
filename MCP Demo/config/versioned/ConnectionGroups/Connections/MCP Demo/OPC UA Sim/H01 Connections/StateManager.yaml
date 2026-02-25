@@ -1,0 +1,193 @@
+ChangedUtcTimestamp: 0001-01-01T00:00:00.0000000Z
+ConnectionLines:
+- ItemStart: 340931341
+  ItemStop: 1478073160
+- ItemStart: 1193782256
+  ItemStop: 198063265
+- ItemStart: 1680645125
+  ItemStop: 2014714749
+- ItemStart: 2060502628
+  ItemStop: 728197341
+- ItemStart: 1953781068
+  ItemStop: 62357614
+- ItemStart: 609331290
+  ItemStop: 251888070
+PrettyPrint: false
+PublishedUtcTimestamp: 0001-01-01T00:00:00.0000000Z
+SavedInVersion: 5.6.50.0
+TransferObjects:
+- BlockTime: ''
+  ChangedUTCTimestamp: 2023-10-04T10:54:22.2430000Z
+  ForceCycle: ''
+  Groups:
+  - Items:
+    - Direction: output
+      LocalId: 1556134975
+      Name: Wert
+      _clrType:
+      - inray.OPCRouter.PlugIns.Shared.DataChangeTrigger.DatachangeTriggerItem, inray.OPCRouter.PlugIns.Shared
+  ItemAddress: StateChangeTrigger
+  LocalId: 1384005100
+  PlugIn: VariablesPlugInConfig
+  PosX: 360
+  PosY: 80
+  TriggerType: OnEveryChange
+  _clrType:
+  - inray.OPCRouter.PlugIns.Shared.DataChangeTrigger.DatachangeTriggerConfigV2, inray.OPCRouter.PlugIns.Shared
+- ChangedUTCTimestamp: 2023-10-04T10:54:37.5410000Z
+  Groups:
+  - Items:
+    - LocalId: 340931341
+      Name: rampstate
+      VariableId: b6c532a8-a657-4597-a698-c91eb01e2f87
+      _clrType:
+      - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
+  LocalId: 1687374107
+  PlugIn: VariablesPlugInConfig
+  PosX: 360
+  PosY: 260
+  _clrType:
+  - inray.OPCRouter.VariablesPlugIn.Config.VariablesTransferObjectConfig, inray.OPCRouter4.VariablesPlugIn
+- ChangedUTCTimestamp: 2023-10-04T10:55:20.6040000Z
+  ConfigType: 3001
+  Groups:
+  - Items:
+    - ForceType: Standard
+      LocalId: 2060502628
+      Name: bp=Objects/2:Maschinen/2:H01/2:Drehzahl;
+      OPCAddress: bp=Objects/2:Maschinen/2:H01/2:Drehzahl;
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    Name: Items
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcRegularItemsGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Value Timestamp
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcValueTimestampGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality-ID
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityIntGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality-String
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityStringGroup, inray.OPCRouter4.OPCPlugIn
+  LocalId: 1912244969
+  PlugIn: UAServer2408301209-223846937-1801FB34-00002707
+  PlugInType: 3100
+  PosX: 980
+  PosY: 400
+  _clrType:
+  - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
+- ChangedUTCTimestamp: 2023-10-04T10:55:47.5960000Z
+  Groups:
+  - Items:
+    - Direction: input
+      LocalId: 1478073160
+      Name: State
+    Name: Variablen
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
+  - Items:
+    - Direction: output
+      LocalId: 1953781068
+      Name: Ausgabewert
+    Name: Ergebnis
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerResultGroup, inray.OPCRouter4.BasePlugIn
+  LocalId: 1702344315
+  PlugIn: BasePlugInConfig
+  PosX: 520
+  PosY: 220
+  StringToParse: IF(State = 2, RANDBETWEEN(0, 2), IF(State = 0, RANDBETWEEN(1, 3), IF(RANDBETWEEN(0, 2) = 1, 2, 0)))
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn
+- ChangedUTCTimestamp: 2023-10-04T11:01:03.4270000Z
+  Groups:
+  - Items:
+    - LocalId: 251888070
+      Name: rampstate
+      VariableId: b6c532a8-a657-4597-a698-c91eb01e2f87
+      _clrType:
+      - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
+  LocalId: 539335136
+  PlugIn: VariablesPlugInConfig
+  PosX: 1920
+  PosY: 360
+  _clrType:
+  - inray.OPCRouter.VariablesPlugIn.Config.VariablesTransferObjectConfig, inray.OPCRouter4.VariablesPlugIn
+- ChangedUTCTimestamp: 2023-10-04T11:04:47.3700000Z
+  Groups:
+  - Items:
+    - LocalId: 1193782256
+      Name: time
+      VariableId: 4e22478d-510c-4e4d-a19f-efc521550fcb
+      _clrType:
+      - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
+  LocalId: 2134162258
+  PlugIn: VariablesPlugInConfig
+  PosX: 320
+  PosY: 580
+  _clrType:
+  - inray.OPCRouter.VariablesPlugIn.Config.VariablesTransferObjectConfig, inray.OPCRouter4.VariablesPlugIn
+- ChangedUTCTimestamp: 2023-10-04T11:05:17.4190000Z
+  Groups:
+  - Items:
+    - Direction: input
+      LocalId: 198063265
+      Name: Time
+    Name: Variablen
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
+  - Items:
+    - Direction: output
+      LocalId: 1680645125
+      Name: Ausgabewert
+    Name: Ergebnis
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerResultGroup, inray.OPCRouter4.BasePlugIn
+  LocalId: 220729514
+  PlugIn: BasePlugInConfig
+  PosX: 480
+  PosY: 540
+  StringToParse: Time + RANDBETWEEN(60, 75)
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn
+- ChangedUTCTimestamp: 2023-10-04T11:05:42.3780000Z
+  Groups:
+  - Items:
+    - LocalId: 2014714749
+      Name: NextStateChange
+      VariableId: 2e58b809-0d4b-4dae-a68d-90320fd9ff3f
+      _clrType:
+      - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
+  LocalId: 1885968338
+  PlugIn: VariablesPlugInConfig
+  PosX: 800
+  PosY: 620
+  _clrType:
+  - inray.OPCRouter.VariablesPlugIn.Config.VariablesTransferObjectConfig, inray.OPCRouter4.VariablesPlugIn
+- ChangedUTCTimestamp: 2023-10-04T11:09:48.2900000Z
+  Groups:
+  - Items:
+    - Direction: input
+      LocalId: 62357614
+      Name: State
+    - Direction: input
+      LocalId: 728197341
+      Name: RPM
+    Name: Variablen
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
+  - Items:
+    - Direction: output
+      LocalId: 609331290
+      Name: Ausgabewert
+    Name: Ergebnis
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerResultGroup, inray.OPCRouter4.BasePlugIn
+  LocalId: 832057194
+  PlugIn: BasePlugInConfig
+  PosX: 1340
+  PosY: 260
+  StringToParse: IF(State = 1, IF(RPM > 800, 2, 1), IF(State = 2, IF(RPM < 15, 1, 2), 0))
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn

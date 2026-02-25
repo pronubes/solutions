@@ -1,0 +1,10 @@
+Id: 430f0da5-9c8b-4101-9f12-262907bd2e9b
+InitialValue:
+  Value: 0
+  VariantType: System.Int64, System.Private.CoreLib
+  _clrType:
+  - inray.SDK.Data.YamlSerializer.YamlVariant, inray.SDK.Data
+Name: TimeProgression
+VariableType: Int64
+_clrType:
+- inray.OPCRouter.VariablesPlugIn.Config.Variable, inray.OPCRouter4.VariablesPlugIn

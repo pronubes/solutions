@@ -1,0 +1,132 @@
+ChangedUtcTimestamp: 2024-09-10T10:46:53.0500000Z
+ConnectionLines:
+- ItemStart: 2005058846
+  ItemStop: 1106850480
+- ItemStart: 325673704
+  ItemStop: 2049620187
+- ItemStart: 1793700530
+  ItemStop: 713676637
+PublishedUtcTimestamp: 0001-01-01T00:00:00.0000000Z
+SavedInVersion: 5.6.50.0
+TransferObjects:
+- ChangedUTCTimestamp: 2024-05-27T08:33:37.5590000Z
+  DesignerExpression: 0/1 * 0-6 * * ?
+  Expression: 0/1 * 0-6 * * ?
+  LocalId: 2040096640
+  PlugIn: BasePlugInConfig
+  PosX: 100
+  PosY: 160
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Cron.CronTriggerConfig, inray.OPCRouter4.BasePlugIn
+- ChangedUTCTimestamp: 2024-05-27T08:34:34.1110000Z
+  DesignerExpression: 0/1 * 8-23 * * ?
+  Expression: 0/1 * 8-23 * * ?
+  LocalId: 1700120479
+  PlugIn: BasePlugInConfig
+  PosX: 440
+  PosY: 160
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Cron.CronTriggerConfig, inray.OPCRouter4.BasePlugIn
+- ChangedUTCTimestamp: 2024-05-27T08:35:09.3670000Z
+  Groups:
+  - Items:
+    - LocalId: 2005058846
+      Name: PTime
+      VariableId: 46cb0bc3-720f-422c-a3f4-4654396aabd2
+      _clrType:
+      - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
+  LocalId: 477664713
+  PlugIn: VariablesPlugInConfig
+  PosX: 580
+  PosY: 480
+  _clrType:
+  - inray.OPCRouter.VariablesPlugIn.Config.VariablesTransferObjectConfig, inray.OPCRouter4.VariablesPlugIn
+- ChangedUTCTimestamp: 2024-05-27T08:35:35.0300000Z
+  Groups:
+  - Items:
+    - Direction: input
+      LocalId: 1106850480
+      Name: T
+    Name: Variables
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
+  - Items:
+    - Direction: output
+      LocalId: 325673704
+      Name: Output value
+    Name: Result
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerResultGroup, inray.OPCRouter4.BasePlugIn
+  LocalId: 1372103052
+  PlugIn: BasePlugInConfig
+  PosX: 780
+  PosY: 440
+  StringToParse: T + 1
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn
+- ChangedUTCTimestamp: 2024-05-27T08:35:50.7660000Z
+  Groups:
+  - Items:
+    - LocalId: 2049620187
+      Name: PTime
+      VariableId: 46cb0bc3-720f-422c-a3f4-4654396aabd2
+      _clrType:
+      - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
+  LocalId: 1653874859
+  PlugIn: VariablesPlugInConfig
+  PosX: 1060
+  PosY: 540
+  _clrType:
+  - inray.OPCRouter.VariablesPlugIn.Config.VariablesTransferObjectConfig, inray.OPCRouter4.VariablesPlugIn
+- ChangedUTCTimestamp: 2024-05-27T09:09:45.9260000Z
+  Groups:
+  - Items:
+    - Direction: input
+      LocalId: 695641434
+      Name: TP
+    Name: Variables
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
+  - Items:
+    - Direction: output
+      LocalId: 1793700530
+      Name: Output value
+    Name: Result
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerResultGroup, inray.OPCRouter4.BasePlugIn
+  LocalId: 2018859028
+  PlugIn: BasePlugInConfig
+  PosX: 780
+  PosY: 660
+  StringToParse: '"Produktiv"'
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn
+- ChangedUTCTimestamp: 2024-05-27T09:09:47.7850000Z
+  ConfigType: 3001
+  Groups:
+  - Items:
+    - ForceType: Default
+      LocalId: 713676637
+      Name: bp=Objects/2:Maschinen/2:RO1/2:Status;
+      OPCAddress: bp=Objects/2:Maschinen/2:RO1/2:Status;
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    Name: Items
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcRegularItemsGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Value Timestamp
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcValueTimestampGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality ID
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityIntGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality string
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityStringGroup, inray.OPCRouter4.OPCPlugIn
+  LocalId: 1444736620
+  PlugIn: UAServer2408301209-223846937-1801FB34-00002707
+  PlugInType: 3100
+  PosX: 1060
+  PosY: 700
+  _clrType:
+  - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn

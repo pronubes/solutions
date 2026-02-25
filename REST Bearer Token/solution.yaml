@@ -1,0 +1,40 @@
+FormatVersion: 1
+Tags:
+  - REST
+IconFile: "rest-bearer.svg"
+DisplayName:
+  DE: "REST Bearer Token"
+  EN: "REST Bearer Token"
+ShortDescription:
+  DE: "Rest Authentifizierung mir Bearer Token"
+  EN: "REST authentication with Bearer Token"
+Parameters:
+  rest_client_host:
+    Type: "String"
+    Label:
+      DE: "REST Host-URL"
+      EN: "REST host URL"
+  rest_bearer_to_url:
+    Type: "String"
+    Label:
+      DE: "Bearer Endpunkt"
+      EN: "Bearer endpoint"
+    HelpText:
+      DE: "Relativer Pfad zum API Endpunkt für das Anfordern des Bearer Tokens. Als Basis des Pfades dient die REST Host-URL."
+      EN: "Relative path to the API endpoint for requesting the Bearer Token. The REST host URL serves as the basis for the path."
+  bearer_token_json_expression:
+    Type: "String"
+    Label:
+      DE: "Bearer Token JSON Expression"
+      EN: "Bearer Token JSON Expression"
+    HelpText:
+      DE: 'JSON Expression, um den Bearer Token aus der Antwort zu erhalten. Zum Beispiel "Data.Token"'
+      EN: 'JSON Expression used to extract the Bearer Token from the response. For example "Data.Token"'
+  rest_data_request_to_url:
+    Type: "String"
+    Label:
+      DE: "Datenanfrage URL"
+      EN: "Data request url"
+    HelpText:
+      DE: "Pfad zu einem API Endpunkt, der Bearer Token Authentifikation benötigt"
+      EN: "Path to an API endpoint that requires Bearer Token authentication"

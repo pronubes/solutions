@@ -1,0 +1,465 @@
+ChangedUtcTimestamp: 2026-02-20T09:06:04.9401777Z
+ConnectionLines:
+- ItemStart: 1108858523
+  ItemStop: 745979792
+PublishedUtcTimestamp: 0001-01-01T00:00:00.0000000Z
+SavedInVersion: 5.6.50.0
+TransferObjects:
+- ChangedUTCTimestamp: 2026-02-16T16:13:30.9600000Z
+  Endpoint: /ui
+  GridSnapPixel: 9
+  Groups:
+  - Name: Request-Parameter
+    _clrType:
+    - inray.OPCRouter.RestPlugIn.Server.Config.RequestParameterGroup, inray.OPCRouter4.RestPlugIn
+  - Items:
+    - Direction: output
+      LocalId: 867272291
+      Name: Request Body
+      ParameterType: RequestBodyItem
+      _clrType:
+      - inray.OPCRouter.RestPlugIn.Shared.Config.RestParameterItem, inray.OPCRouter4.RestPlugIn
+    - Direction: output
+      LocalId: 2128076777
+      Name: Method
+      ParameterType: Method
+      _clrType:
+      - inray.OPCRouter.RestPlugIn.Shared.Config.RestParameterItem, inray.OPCRouter4.RestPlugIn
+    - Direction: output
+      LocalId: 1943538180
+      Name: Client IP
+      ParameterType: ClientIP
+      _clrType:
+      - inray.OPCRouter.RestPlugIn.Shared.Config.RestParameterItem, inray.OPCRouter4.RestPlugIn
+    Name: Request
+    _clrType:
+    - inray.OPCRouter.RestPlugIn.Server.Config.RequestGroup, inray.OPCRouter4.RestPlugIn
+  LocalId: 369319281
+  PlugIn: 2602161612-329599037-3C2A75F6-0000A11E
+  PosX: 20
+  PosY: 20
+  ResponseType: text/html
+  UnionID: 1
+  _clrType:
+  - inray.OPCRouter.RestPlugIn.Server.Config.RestApiAsyncTriggerConfig, inray.OPCRouter4.RestPlugIn
+- ChangedUTCTimestamp: 2026-02-16T16:13:30.9670000Z
+  Groups:
+  - Name: Response-Parameter
+    _clrType:
+    - inray.OPCRouter.RestPlugIn.Server.Config.ResponseParameterGroup, inray.OPCRouter4.RestPlugIn
+  - Items:
+    - Direction: input
+      LocalId: 745979792
+      Name: Response Body
+      ParameterType: ResposeBodyItem
+      _clrType:
+      - inray.OPCRouter.RestPlugIn.Shared.Config.RestParameterItem, inray.OPCRouter4.RestPlugIn
+    - Direction: input
+      LocalId: 231317834
+      Name: Status Code
+      ParameterType: StatusCode
+      _clrType:
+      - inray.OPCRouter.RestPlugIn.Shared.Config.RestParameterItem, inray.OPCRouter4.RestPlugIn
+    Name: Response
+    _clrType:
+    - inray.OPCRouter.RestPlugIn.Server.Config.ResponseGroup, inray.OPCRouter4.RestPlugIn
+  LocalId: 2042453502
+  PlugIn: 2602161612-329599037-3C2A75F6-0000A11E
+  PosX: 20
+  PosY: 20
+  UnionID: 1
+  UnionOrder: 1
+  _clrType:
+  - inray.OPCRouter.RestPlugIn.Server.RestApiTransferObjectConfig, inray.OPCRouter4.RestPlugIn
+- ChangedUTCTimestamp: 2026-02-16T17:21:14.5650000Z
+  GridSnapPixel: 3
+  Groups:
+  - GroupType: 1052
+    Name: Platzhalter
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.TextReplace.PlaceholderGroup, inray.OPCRouter4.BasePlugIn
+  - GroupType: 1053
+    Items:
+    - LocalId: 1108858523
+      Name: Content
+      _clrType:
+      - inray.OPCRouter.BasePlugIn.Config.TextReplace.TextReplaceTransferObjectItem, inray.OPCRouter4.BasePlugIn
+    Name: Inhalt
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.TextReplace.ContentGroup, inray.OPCRouter4.BasePlugIn
+  LocalId: 1961016320
+  PlugIn: BasePlugInConfig
+  PosX: 280
+  PosY: 140
+  Text: >
+    <!DOCTYPE html>
+
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI Shift Log Classifier</title>
+        <style>
+          body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+              sans-serif;
+            max-width: 50%;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+          }
+
+          h1 {
+            text-align: center;
+            color: #1a73e8;
+            margin-bottom: 10px;
+          }
+
+          .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+          }
+
+          label {
+            display: block;
+            margin: 20px 0 5px;
+            font-weight: bold;
+          }
+
+          input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.2s;
+          }
+
+          input:focus {
+            outline: none;
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.1);
+          }
+
+          button {
+            background: #1a73e8;
+            color: white;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            transition: background 0.2s;
+          }
+
+          button:hover:not(:disabled) {
+            background: #1557b0;
+          }
+
+          button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+          }
+
+          #result {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            background: #f8f9fa;
+            border-left: 4px solid #1a73e8;
+            white-space: pre-wrap;
+            font-family: "SF Mono", Monaco, "Cascadia Code", monospace;
+            font-size: 14px;
+            line-height: 1.5;
+          }
+
+          #result.show {
+            display: block;
+          }
+
+          .error {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+            color: #721c24;
+          }
+
+          #templateContainer {
+            margin-top: 18px;
+          }
+
+          .templates-header {
+            margin: 25px 0 15px;
+          }
+
+          .templates-main-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #1a73e8;
+            margin-bottom: 4px;
+          }
+
+          .templates-subtitle {
+            font-size: 0.9rem;
+            color: #666;
+          }
+
+          .templates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 10px;
+          }
+
+          .template-card {
+            display: block;
+            text-align: left;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e6eefb;
+            background: #ffffff !important;
+            box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+            cursor: pointer;
+            transition: transform 0.12s ease, box-shadow 0.12s ease,
+              border-color 0.12s ease;
+            font-family: inherit;
+            color: #0f172a;
+            line-height: 1.35;
+            white-space: normal;
+          }
+
+          .template-card:hover,
+          .template-card:focus {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+            border-color: #e2e8f0;
+            background: #ffffff !important;
+          }
+
+          .template-card .title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+            color: #0b63d6;
+          }
+
+          .template-card .preview {
+            font-size: 0.87rem;
+            color: #44516b;
+          }
+
+          .template-card.invalid {
+            border-left: 4px solid #dc3545;
+            background: linear-gradient(180deg, #fff8f8 0%, #fffefe 100%);
+          }
+
+          .applied-badge {
+            display: inline-block;
+            margin-left: 8px;
+            padding: 2px 8px;
+            font-size: 11px;
+            border-radius: 999px;
+            background: #e6f0ff;
+            color: #0b63d6;
+            vertical-align: middle;
+          }
+
+          @media (max-width: 420px) {
+            .templates-grid {
+              grid-template-columns: 1fr;
+            }
+          }
+        </style>
+      </head>
+
+      <body>
+        <h1>AI Shift Log Classifier</h1>
+        <p class="subtitle">
+          Try it live: Automatically classify and structure free-text shift log
+          entries into standardized JSON.
+        </p>
+
+        <form id="configForm">
+          <label>Enter Shift Log Entry:</label>
+          <input
+            type="text"
+            id="inputText"
+            placeholder="e.g. Application stopped responding, repair installation performed, works flawlessly again"
+          />
+
+          <button type="submit">Analyze & Structure</button>
+        </form>
+
+        <div id="result"></div>
+
+        <div class="templates-header">
+          <hr />
+          <div class="templates-main-title">Shift Log Templates</div>
+          <div class="templates-subtitle">
+            Click a template to automatically insert a structured example into the
+            input field.
+          </div>
+        </div>
+
+        <div class="templates-grid" role="list">
+          <button
+            type="button"
+            class="template-card"
+            role="listitem"
+            data-template="Filler line stopped due to photoelectric sensor trigger, sensor cleaned and realigned, line running in automatic mode again"
+          >
+            <div class="title">Line stop (sensor)</div>
+            <div class="preview">
+              Photo sensor triggered, cleaned and realigned, line running again
+            </div>
+          </button>
+
+          <button
+            type="button"
+            class="template-card"
+            role="listitem"
+            data-template="Quality check: part 4711 scratched, scrap recorded, root cause worn gripper pad, pad replaced, production back to normal"
+          >
+            <div class="title">Quality issue (scrap)</div>
+            <div class="preview">
+              Scratched parts detected, gripper pad replaced
+            </div>
+          </button>
+
+          <button
+            type="button"
+            class="template-card"
+            role="listitem"
+            data-template="Oven zone 3 temperature below setpoint, heating element inspected, terminal tightened, temperature stable within limits"
+          >
+            <div class="title">Process deviation (temperature)</div>
+            <div class="preview">
+              Oven temperature corrected after terminal check
+            </div>
+          </button>
+
+          <button
+            type="button"
+            class="template-card"
+            role="listitem"
+            data-template="Material feed issue: conveyor belt slipping, belt tension adjusted, material flow stable, no further jams"
+          >
+            <div class="title">Material flow (conveyor)</div>
+            <div class="preview">Conveyor adjusted, feed stable</div>
+          </button>
+
+          <button
+            type="button"
+            class="template-card"
+            role="listitem"
+            data-template="Tool change performed on press, zero point verified, test run with 10 parts, dimensions within tolerance"
+          >
+            <div class="title">Tool change / setup</div>
+            <div class="preview">Tool changed, test run OK</div>
+          </button>
+
+          <button
+            type="button"
+            class="template-card invalid"
+            role="listitem"
+            data-template="Hello World"
+          >
+            <div class="title">Invalid - Hello World</div>
+            <div class="preview">Hello World</div>
+          </button>
+        </div>
+
+        <script>
+          document
+            .getElementById("configForm")
+            .addEventListener("submit", async (e) => {
+              e.preventDefault();
+              const input = document.getElementById("inputText").value.trim();
+
+              if (!input) {
+                showResult("Please enter a shift log entry.", true);
+                return;
+              }
+
+              const btn = e.target.querySelector("button");
+              btn.disabled = true;
+              btn.textContent = "Processing...";
+              showResult("Sending to AI endpoint...", false);
+
+              try {
+                const base = new URL(".", window.location.href); // directory of current page
+                const aiUrl = new URL("ai", base); // sibling "ai"
+                const response = await fetch(aiUrl, {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ input }),
+                });
+
+                if (!response.ok) {
+                  throw new Error(
+                    `HTTP ${response.status}: ${response.statusText}`
+                  );
+                }
+
+                const data = await response.json();
+                showResult(JSON.stringify(data, null, 2));
+              } catch (error) {
+                showResult(`Error: ${error.message}`, true);
+              } finally {
+                btn.disabled = false;
+                btn.textContent = "Analyze & Structure";
+              }
+            });
+
+          function showResult(text, isError = false) {
+            const el = document.getElementById("result");
+            el.textContent = text;
+            el.className = isError ? "error" : "";
+            el.classList.add("show");
+          }
+
+          (function () {
+            const container = document.getElementById("templateContainer");
+            if (!container) return;
+
+            container.addEventListener("click", (ev) => {
+              const card = ev.target.closest(".template-card");
+              if (!card) return;
+
+              const text = card.getAttribute("data-template") || "";
+              const input = document.getElementById("inputText");
+              if (!input) return;
+
+              input.value = text;
+              input.focus();
+            });
+          })();
+
+          document.querySelectorAll(".template-card").forEach((card) => {
+            card.addEventListener("click", function () {
+              const input = document.getElementById("inputText");
+              if (!input) return;
+              input.value = this.getAttribute("data-template") || "";
+              input.focus();
+            });
+          });
+        </script>
+      </body>
+    </html>
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.TextReplace.TextReplaceTransferObjectConfig, inray.OPCRouter4.BasePlugIn
+- ChangedUTCTimestamp: 2026-02-18T19:13:31.3000000Z
+  GridSnapPixel: 18
+  LocalId: 291580968
+  PlugIn: BasePlugInConfig
+  PosX: 560
+  PosY: 20
+  Summary: <p><a href="services/AI%20Shift%20Log%20Classifier%20API/shift-log-classifier/ui" rel="noopener noreferrer" target="_blank">Click here</a> to open the debug and test page.</p>
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Note.NoteTransferObjectConfig, inray.OPCRouter4.BasePlugIn

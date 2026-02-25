@@ -1,0 +1,98 @@
+ChangedUtcTimestamp: 0001-01-01T00:00:00.0000000Z
+ConnectionLines:
+- ItemStart: 485031407
+  ItemStop: 290655628
+- ItemStart: 172693056
+  ItemStop: 1737380168
+- ItemStart: 352797951
+  ItemStop: 861532706
+- ItemStart: 858780385
+  ItemStop: 800794924
+PublishedUtcTimestamp: 0001-01-01T00:00:00.0000000Z
+SavedInVersion: 5.6.50.0
+TransferObjects:
+- BlockTime: ''
+  ChangedUTCTimestamp: 2023-10-04T10:50:54.2920000Z
+  ForceCycle: ''
+  Groups:
+  - Items:
+    - Direction: output
+      LocalId: 1802513634
+      Name: Wert
+      _clrType:
+      - inray.OPCRouter.PlugIns.Shared.DataChangeTrigger.DatachangeTriggerItem, inray.OPCRouter.PlugIns.Shared
+  ItemAddress: time
+  LocalId: 1136227579
+  PlugIn: VariablesPlugInConfig
+  PosX: 200
+  PosY: 100
+  TriggerType: OnEveryChange
+  _clrType:
+  - inray.OPCRouter.PlugIns.Shared.DataChangeTrigger.DatachangeTriggerConfigV2, inray.OPCRouter.PlugIns.Shared
+- ChangedUTCTimestamp: 2023-10-04T10:51:10.0620000Z
+  Groups:
+  - Items:
+    - LocalId: 485031407
+      Name: time
+      VariableId: 4e22478d-510c-4e4d-a19f-efc521550fcb
+      _clrType:
+      - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
+    - LocalId: 172693056
+      Name: NextStateChange2
+      VariableId: e08b0afd-77aa-411b-a261-8b685ff8d75e
+      _clrType:
+      - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
+    - LocalId: 352797951
+      Name: StateChangeTrigger2
+      VariableId: 44c51206-aac4-489c-94f4-459f2dc02471
+      _clrType:
+      - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
+  LocalId: 31748867
+  PlugIn: VariablesPlugInConfig
+  PosX: 200
+  PosY: 280
+  _clrType:
+  - inray.OPCRouter.VariablesPlugIn.Config.VariablesTransferObjectConfig, inray.OPCRouter4.VariablesPlugIn
+- ChangedUTCTimestamp: 2023-10-04T10:51:45.8280000Z
+  Groups:
+  - Items:
+    - LocalId: 800794924
+      Name: StateChangeTrigger2
+      VariableId: 44c51206-aac4-489c-94f4-459f2dc02471
+      _clrType:
+      - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
+  LocalId: 1281799880
+  PlugIn: VariablesPlugInConfig
+  PosX: 760
+  PosY: 360
+  _clrType:
+  - inray.OPCRouter.VariablesPlugIn.Config.VariablesTransferObjectConfig, inray.OPCRouter4.VariablesPlugIn
+- ChangedUTCTimestamp: 2023-10-04T10:52:05.0210000Z
+  Groups:
+  - Items:
+    - Direction: input
+      LocalId: 290655628
+      Name: Time
+    - Direction: input
+      LocalId: 1737380168
+      Name: Next
+    - Direction: input
+      LocalId: 861532706
+      Name: Trigger
+    Name: Variablen
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
+  - Items:
+    - Direction: output
+      LocalId: 858780385
+      Name: Ausgabewert
+    Name: Ergebnis
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerResultGroup, inray.OPCRouter4.BasePlugIn
+  LocalId: 592747777
+  PlugIn: BasePlugInConfig
+  PosX: 400
+  PosY: 240
+  StringToParse: IF(Time > Next, Trigger + 1, Trigger)
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn

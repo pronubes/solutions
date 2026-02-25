@@ -1,0 +1,10 @@
+FormatVersion: 1
+Tags:
+  - AI
+  - OPC
+DisplayName:
+  DE: "MCP-Server für Maschinen-Zustände"
+  EN: "MCP server for machine states"
+ShortDescription:
+  DE: "Ein Beispiel für wie Maschinen-Zustände für Large-Language-Models zugänglich gemacht werden können"
+  EN: "An example for how to make machine states available to large language models"

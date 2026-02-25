@@ -1,0 +1,25 @@
+FormatVersion: 1
+Tags:
+  - AI
+DisplayName:
+  DE: "KI Schichtbuch-Klassifizierung"
+  EN: "AI Shift Log Classifier"
+ShortDescription:
+  DE: "Automatische Klassifizierung und Strukturierung von Schichtbuch-Einträgen in JSON."
+  EN: "Automatically classify and structure free-text shift log entries into standardized JSON."
+Parameters:
+  openai_api_token:
+    Type: "String"
+    Label:
+      DE: "OpenAI API-Token"
+      EN: "OpenAI API Token"
+  openai_organization_id:
+    Type: "String"
+    Label:
+      DE: "OpenAI Organisations-ID"
+      EN: "OpenAI Organization ID"
+  openai_project_id:
+    Type: "String"
+    Label:
+      DE: "OpenAI Projekt-ID"
+      EN: "OpenAI Project ID"

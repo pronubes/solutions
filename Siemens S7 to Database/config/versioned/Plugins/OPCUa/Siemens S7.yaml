@@ -1,0 +1,21 @@
+AdvancedProperties:
+  DisableInternalCertificateValidation: true
+  IgnoreContinuationPointZero: false
+  KeepAliveTimeoutOverride: 0
+  MaxNodesPerTranslateBrowsePathOverride: 0
+  ParallelSubscriptions: true
+AutoSecurity: false
+CertificateId: OPC-Router
+Changed: 2025-11-18T13:11:03.5864010Z
+DatachangeV2AsyncQueueLimit: 100
+Endpoint: "${opc_client_endpoint}"
+GroupManagerTypeEnum: V2
+Id: 2511181211-163160691-C201E372-0000826A
+InstanceName: Siemens S7
+ItemIdentification: NodeId
+OpcReadMode: ForceSyncRead
+PlugInTypeID: 3100
+RegisterItemsOnPlugInStart: true
+SavedInVersion: 5.4.6000.193
+_clrType:
+- inray.OPCRouter.OPCPlugIn.Config.PlugIn.OPCUaPlugInConfig, inray.OPCRouter4.OPCPlugIn

@@ -1,0 +1,10 @@
+Id: 51e313cd-bf1d-459a-87e2-e07a73ca6544
+InitialValue:
+  Value: true
+  VariantType: System.Boolean, System.Private.CoreLib
+  _clrType:
+  - inray.SDK.Data.YamlSerializer.YamlVariant, inray.SDK.Data
+Name: Productive
+VariableType: Boolean
+_clrType:
+- inray.OPCRouter.VariablesPlugIn.Config.Variable, inray.OPCRouter4.VariablesPlugIn
