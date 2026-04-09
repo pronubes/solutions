@@ -8,4 +8,4 @@ Das erzeugte JSON-Objekt wird anschließend an die Testseite zurückgegeben und 
 
 ##### Hinweise
 - Die Organisations- und Projekt-ID finden Sie unter [**platform.openai.com**](https://platform.openai.com/) in den Einstellungen unter dem **General**-Menüpunkt.
-- Es ist standardmäßig das Modell **gpt-5-mini** konfiguriert.
+- Es ist standardmäßig das Modell **GPT-5-mini** konfiguriert.

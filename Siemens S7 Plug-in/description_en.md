@@ -1,1 +1,0 @@
-This Solution contains an OPC UA plug-in that is optimized for connection to a Siemens S7 controller.

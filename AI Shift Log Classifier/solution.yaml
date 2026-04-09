@@ -1,13 +1,32 @@
 FormatVersion: 1
 Tags:
   - AI
+IconFile: "openai.svg"
 DisplayName:
   DE: "KI Schichtbuch-Klassifizierung"
   EN: "AI Shift Log Classifier"
 ShortDescription:
-  DE: "Automatische Klassifizierung und Strukturierung von Schichtbuch-Einträgen in JSON."
-  EN: "Automatically classify and structure free-text shift log entries into standardized JSON."
+  DE: "Automatische Klassifizierung und Strukturierung von Schichtbuch-Einträgen in JSON"
+  EN: "Automatically classify and structure free-text shift log entries into standardized JSON"
 Parameters:
+  ai_shift_log_classifier_api_instance_name:
+    Type: "FileName"
+    Label:
+      DE: "AI Shift Log Classifier API REST Trigger Name"
+      EN: "AI Shift Log Classifier API REST Trigger name"
+    HelpText:
+      DE: "Eindeutiger Name für die AI Shift Log Classifier REST Trigger Instanz"
+      EN: "Unique name for the AI Shift Log Classifier REST Trigger instance"
+    Default: "AI Shift Log Classifier API"
+  openai_api_client_instance_name:
+    Type: "FileName"
+    Label:
+      DE: "OpenAI API REST Client Name"
+      EN: "OpenAI API REST Client name"
+    HelpText:
+      DE: "Eindeutiger Name für die OpenAI REST Client Instanz"
+      EN: "Unique name for the OpenAI REST Client instance"
+    Default: "OpenAI API Client"
   openai_api_token:
     Type: "String"
     Label:
@@ -23,3 +42,21 @@ Parameters:
     Label:
       DE: "OpenAI Projekt-ID"
       EN: "OpenAI Project ID"
+  ai_trigger_connection_name:
+    Type: "FileName"
+    Label:
+      DE: "AI Trigger Verbindungsname"
+      EN: "AI trigger connection name"
+    HelpText:
+      DE: "Name der Verbindung, die den REST Trigger mit der AI-Verarbeitung verbindet."
+      EN: "Name of the connection that links the REST trigger with AI processing."
+    Default: "AI-Trigger"
+  web_trigger_connection_name:
+    Type: "FileName"
+    Label:
+      DE: "Web Trigger Verbindungsname"
+      EN: "Web trigger connection name"
+    HelpText:
+      DE: "Name der Verbindung, die den API-Aufruf mit der JSON-Aufbereitung verbindet."
+      EN: "Name of the connection that links the API call with JSON preparation."
+    Default: "Web-Trigger"

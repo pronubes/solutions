@@ -8,4 +8,4 @@ The resulting JSON object is then transmitted back to the test page and displaye
 
 ##### Notes
 - You can find your organization and project ID at [**platform.openai.com**](https://platform.openai.com/) in the settings under the **General** menu item.
-- The model **gpt-5-mini** is configured by default.
+- The model **GPT-5-mini** is configured by default.

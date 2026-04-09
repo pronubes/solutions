@@ -2,9 +2,9 @@
 
 ## Overview  
 
-This repository contains **Solutions** designed for use with the **OPC Router** and **connubes**.  
-A **Solution** is a pre‑structured full or partial project for the OPC Router and connubes that includes configurable parameters.  
-These parameters allow you to tailor the Solution to your specific environment before importing it into OPC Router or connubes.
+This repository contains **Solutions** designed for use with pronubes Edge.  
+A **Solution** is a pre‑structured full or partial project for pronubes Edge that includes configurable parameters.  
+These parameters allow you to tailor the Solution to your specific environment before importing it into pronubes Edge.
 
 Solutions help you:
 
@@ -14,7 +14,7 @@ Solutions help you:
 - Reuse proven templates with flexible parameterization
 
 Solutions are not intended to be consumed directly from this GitHub repository.  
-This repository is a predefined source of Solutions for the OPC Router and connubes. The Solutions from this repositories are offered in the Solution Gallery UI by default.
+This repository is a predefined source of Solutions for pronubes Edge. The Solutions from this repository are offered in the Solution Gallery UI by default.
 
 ---
 
@@ -29,5 +29,5 @@ Solutions can include:
 
 - Connections  
 - Plug-in configurations  
-- Setting for the OPC Router or connubes
+- Settings for pronubes Edge
 - And more

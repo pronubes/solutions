@@ -2,9 +2,29 @@ FormatVersion: 1
 Tags:
   - AI
   - OPC
+IconFile: "mcp.svg"
 DisplayName:
   DE: "MCP-Server für Maschinen-Zustände"
   EN: "MCP server for machine states"
 ShortDescription:
-  DE: "Ein Beispiel für wie Maschinen-Zustände für Large-Language-Models zugänglich gemacht werden können"
-  EN: "An example for how to make machine states available to large language models"
+  DE: "Beispielhafte Bereitstellung von Maschinendaten über MCP"
+  EN: "Example setup for providing machine data via MCP"
+Parameters:
+  machine_data_instance_name:
+    Type: "FileName"
+    Label:
+      DE: "Maschinendaten OPC UA Server Name"
+      EN: "Machine data OPC UA Server name"
+    HelpText:
+      DE: "Eindeutiger Name für die OPC UA Server Instanz"
+      EN: "Unique name for the OPC UA Server instance"
+    Default: "Machine data"
+  mcp_instance_name:
+    Type: "FileName"
+    Label:
+      DE: "MCP REST Client Name"
+      EN: "MCP REST Client name"
+    HelpText:
+      DE: "Eindeutiger Name für die MCP REST Client Instanz"
+      EN: "Unique name for the MCP REST Client instance"
+    Default: "MCP"
