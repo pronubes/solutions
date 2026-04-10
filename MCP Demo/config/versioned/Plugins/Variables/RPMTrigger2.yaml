@@ -1,0 +1,10 @@
+Id: 901b799e-18e6-4d99-879a-900ad2e20688
+InitialValue:
+  Value: 0
+  VariantType: System.Int64, System.Private.CoreLib
+  _clrType:
+  - inray.SDK.Data.YamlSerializer.YamlVariant, inray.SDK.Data
+Name: RPMTrigger2
+VariableType: Int64
+_clrType:
+- inray.OPCRouter.VariablesPlugIn.Config.Variable, inray.OPCRouter4.VariablesPlugIn

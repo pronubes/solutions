@@ -1,0 +1,119 @@
+ChangedUtcTimestamp: 2026-03-06T09:27:01.4151351Z
+ConnectionLines:
+- ItemStart: 375266577
+  ItemStop: 73905556
+- ItemStart: 1900167386
+  ItemStop: 68392121
+- ItemStart: 1767854392
+  ItemStop: 435273148
+PublishedUtcTimestamp: 0001-01-01T00:00:00.0000000Z
+SavedInVersion: 5.6.5000.0
+TransferObjects:
+- BlockTime: ''
+  ChangedUTCTimestamp: 2023-09-28T07:49:18.7310000Z
+  ForceCycle: ''
+  Groups:
+  - Items:
+    - Direction: output
+      LocalId: 24136662
+      Name: Value
+      _clrType:
+      - inray.OPCRouter.PlugIns.Shared.DataChangeTrigger.DatachangeTriggerItem, inray.OPCRouter.PlugIns.Shared
+  ItemAddress: RPMTrigger
+  LocalId: 943000795
+  PlugIn: VariablesPlugInConfig
+  PosX: 20
+  PosY: 20
+  TriggerType: OnEveryChange
+  _clrType:
+  - inray.OPCRouter.PlugIns.Shared.DataChangeTrigger.DatachangeTriggerConfigV2, inray.OPCRouter.PlugIns.Shared
+- ChangedUTCTimestamp: 2023-09-28T08:44:39.3550000Z
+  ConfigType: 3001
+  Groups:
+  - Items:
+    - ForceType: Default
+      LocalId: 1767854392
+      Name: bp=Objects/2:Machines/2:H01/2:RPM;
+      OPCAddress: bp=Objects/2:Machines/2:H01/2:RPM;
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    - ForceType: Default
+      LocalId: 375266577
+      Name: bp=Objects/2:Machines/2:H01/2:Temperature;
+      OPCAddress: bp=Objects/2:Machines/2:H01/2:Temperature;
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    Name: Items
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcRegularItemsGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Value Timestamp
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcValueTimestampGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality ID
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityIntGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality string
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityStringGroup, inray.OPCRouter4.OPCPlugIn
+  LocalId: 1837974896
+  PlugIn: UAServer2408301209-223846937-1801FB34-00002707
+  PlugInType: 3100
+  PosX: 20
+  PosY: 180
+  _clrType:
+  - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
+- ChangedUTCTimestamp: 2023-09-28T08:58:25.8490000Z
+  ConfigType: 3001
+  Groups:
+  - Items:
+    - ForceType: Default
+      LocalId: 68392121
+      Name: bp=Objects/2:Machines/2:H01/2:Temperature;
+      OPCAddress: bp=Objects/2:Machines/2:H01/2:Temperature;
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    Name: Items
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcRegularItemsGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Value Timestamp
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcValueTimestampGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality ID
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityIntGroup, inray.OPCRouter4.OPCPlugIn
+  - Name: Quality string
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObject.OpcQualityStringGroup, inray.OPCRouter4.OPCPlugIn
+  LocalId: 2123982416
+  PlugIn: UAServer2408301209-223846937-1801FB34-00002707
+  PlugInType: 3100
+  PosX: 20
+  PosY: 320
+  _clrType:
+  - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
+- ChangedUTCTimestamp: 2023-10-05T05:38:30.7160000Z
+  Groups:
+  - Items:
+    - Direction: input
+      LocalId: 73905556
+      Name: Temperature
+    - Direction: input
+      LocalId: 435273148
+      Name: RPM
+    Name: Variablen
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
+  - Items:
+    - Direction: output
+      LocalId: 1900167386
+      Name: Output value
+    Name: Result
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerResultGroup, inray.OPCRouter4.BasePlugIn
+  LocalId: 1042031500
+  PlugIn: BasePlugInConfig
+  PosX: 440
+  PosY: 180
+  StringToParse: IF(RPM > 30, MIN(IF(Temperature < 100, Temperature + RANDBETWEEN(4, 13), Temperature), 100) + RANDBETWEEN(-1, 2), MAX(IF(Temperature > 14, Temperature - RANDBETWEEN(4, 7), Temperature), 14) + RANDBETWEEN(-1, 2))
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn

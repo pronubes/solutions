@@ -1,0 +1,232 @@
+ChangedUtcTimestamp: 2026-03-18T10:00:09.1226046Z
+ConnectionLines:
+- ItemStart: 408829237
+  ItemStop: 1140502176
+- ItemStart: 547944136
+  ItemStop: 860735016
+- ItemStart: 1576946005
+  ItemStop: 622924672
+- ItemStart: 1846951066
+  ItemStop: 2131715112
+PublishedUtcTimestamp: 0001-01-01T00:00:00.0000000Z
+SavedInVersion: 5.6.5000.0
+TransferObjects:
+- ChangedUTCTimestamp: 2026-02-16T15:34:23.6140000Z
+  Endpoint: /list_machines
+  GridSnapPixel: 18
+  Groups:
+  - Name: Request-Parameter
+    _clrType:
+    - inray.OPCRouter.RestPlugIn.Server.Config.RequestParameterGroup, inray.OPCRouter4.RestPlugIn
+  - Items:
+    - Direction: output
+      LocalId: 630486876
+      Name: Request Body
+      ParameterType: RequestBodyItem
+      _clrType:
+      - inray.OPCRouter.RestPlugIn.Shared.Config.RestParameterItem, inray.OPCRouter4.RestPlugIn
+    - Direction: output
+      LocalId: 1873348423
+      Name: Method
+      ParameterType: Method
+      _clrType:
+      - inray.OPCRouter.RestPlugIn.Shared.Config.RestParameterItem, inray.OPCRouter4.RestPlugIn
+    - Direction: output
+      LocalId: 560157367
+      Name: Client IP
+      ParameterType: ClientIP
+      _clrType:
+      - inray.OPCRouter.RestPlugIn.Shared.Config.RestParameterItem, inray.OPCRouter4.RestPlugIn
+    Name: Request
+    _clrType:
+    - inray.OPCRouter.RestPlugIn.Server.Config.RequestGroup, inray.OPCRouter4.RestPlugIn
+  IsMcpToolActive: true
+  LocalId: 271588123
+  McpToolDescription: List all available machine names
+  McpToolInputSchema: "{\n	\"type\": \"object\"\n}"
+  McpToolName: list_machines
+  McpToolOutputSchema: "{\n	\"type\": \"object\",\n	\"properties\": {\n		\"maschines\": {\n			\"type\": \"array\",\n			\"items\": {\n				\"type\": \"object\",\n				\"properties\": {\n					\"name\": {\n						\"type\": \"string\",\n						\"description\": \"The name of the machine.\"\n					}\n				}\n			}\n		}\n	}\n}"
+  McpToolOutputType: StructuredContent
+  Methods: POST
+  PlugIn: 2602161532-572372205-B84485AA-00003D6C
+  PosX: 20
+  PosY: 20
+  ResponseType: application/json
+  UnionID: 1
+  _clrType:
+  - inray.OPCRouter.RestPlugIn.Server.Config.RestApiAsyncTriggerConfig, inray.OPCRouter4.RestPlugIn
+- ChangedUTCTimestamp: 2026-02-16T15:34:23.6210000Z
+  Groups:
+  - Name: Response-Parameter
+    _clrType:
+    - inray.OPCRouter.RestPlugIn.Server.Config.ResponseParameterGroup, inray.OPCRouter4.RestPlugIn
+  - Items:
+    - Direction: input
+      LocalId: 1140502176
+      Name: Response Body
+      ParameterType: ResposeBodyItem
+      _clrType:
+      - inray.OPCRouter.RestPlugIn.Shared.Config.RestParameterItem, inray.OPCRouter4.RestPlugIn
+    - Direction: input
+      LocalId: 401024
+      Name: Status Code
+      ParameterType: StatusCode
+      _clrType:
+      - inray.OPCRouter.RestPlugIn.Shared.Config.RestParameterItem, inray.OPCRouter4.RestPlugIn
+    Name: Response
+    _clrType:
+    - inray.OPCRouter.RestPlugIn.Server.Config.ResponseGroup, inray.OPCRouter4.RestPlugIn
+  LocalId: 309710203
+  PlugIn: 2602161532-572372205-B84485AA-00003D6C
+  PosX: 20
+  PosY: 20
+  UnionID: 1
+  UnionOrder: 1
+  _clrType:
+  - inray.OPCRouter.RestPlugIn.Server.RestApiTransferObjectConfig, inray.OPCRouter4.RestPlugIn
+- ChangedUTCTimestamp: 2026-02-16T17:15:09.1650000Z
+  GridSnapPixel: 3
+  Groups:
+  - Items:
+    - LocalId: 408829237
+      Name: Json
+      _clrType:
+      - inray.OPCRouter.BasePlugIn.Config.JSON.JsonTransferObjectDocItem, inray.OPCRouter4.BasePlugIn
+    Name: JsonPath Doc
+  - Name: JsonPath Parameters
+  - Items:
+    - Direction: input
+      LocalId: 2131715112
+      Name: machines
+      Value: $.machines
+      _clrType:
+      - inray.OPCRouter.BasePlugIn.Config.JSON.JsonTransferObjectNodeItem, inray.OPCRouter4.BasePlugIn
+    Name: JsonPath Items
+  JsonDocument: >-
+    {
+      "machines": []
+    }
+  LocalId: 262118881
+  PlugIn: BasePlugInConfig
+  PosX: 280
+  PosY: 160
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.JSON.JsonWriteTransferObjectConfig, inray.OPCRouter4.BasePlugIn
+- ChangedUTCTimestamp: 2026-02-17T16:30:10.4070000Z
+  GridSnapPixel: 13
+  Groups:
+  - Items:
+    - Direction: input
+      LocalId: 860735016
+      Name: Path
+    Name: Variablen
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
+  - Items:
+    - Direction: output
+      LocalId: 1576946005
+      Name: Output value
+    Name: Result
+    _clrType:
+    - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerResultGroup, inray.OPCRouter4.BasePlugIn
+  LocalId: 710027182
+  PlugIn: BasePlugInConfig
+  PosX: 720
+  PosY: 140
+  StringToParse: LEFT("Path", FIND("/", "Path")-1)
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn
+- ChangedUTCTimestamp: 2026-03-06T10:45:48.4410000Z
+  GridSnapPixel: 7
+  Groups:
+  - Items:
+    - Direction: output
+      LocalId: 108603245
+      Name: Value
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    - Direction: output
+      ItemType: QualityInt
+      LocalId: 1629590894
+      Name: Quality ID
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    - Direction: output
+      ItemType: QualityString
+      LocalId: 1467201971
+      Name: Quality string
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    - Direction: output
+      ItemType: Timestamp
+      LocalId: 1339158007
+      Name: Value Time
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    - Direction: output
+      ItemType: ItemName
+      LocalId: 173366431
+      Name: Node-ID
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    - Direction: output
+      ItemType: ItemNamespaceName
+      LocalId: 1117052058
+      Name: Item namespace
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    - Direction: output
+      ItemType: ItemDisplayName
+      LocalId: 512589866
+      Name: Item name
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    - Direction: output
+      ItemType: ItemPath
+      LocalId: 547944136
+      Name: Item path
+      _clrType:
+      - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
+    Name: Ausgabe
+  Included:
+  - FilterValue: Status
+    LocalId: 1272006843
+    SearchString: Status
+    _clrType:
+    - inray.OPCRouter.OPCPlugIn.Config.OPCItemBrowseFilter+ContainsFilter, inray.OPCRouter4.OPCPlugIn
+  LocalId: 335056524
+  OPCAddress: bp=Objects/2:Machines;
+  PlugIn: UAServer2408301209-223846937-1801FB34-00002707
+  PosX: 1080
+  PosY: 140
+  _clrType:
+  - inray.OPCRouter.OPCPlugIn.Config.MultiReadTransferObject.OPCMultiReadTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
+- ChangedUTCTimestamp: 2026-03-18T09:58:18.8910000Z
+  FillArrayValuesSettingEnum: DuplicateDocuments
+  GridSnapPixel: 3
+  Groups:
+  - Items:
+    - LocalId: 1846951066
+      Name: Json
+      _clrType:
+      - inray.OPCRouter.BasePlugIn.Config.JSON.JsonTransferObjectDocItem, inray.OPCRouter4.BasePlugIn
+    Name: JsonPath Doc
+  - Name: JsonPath Parameters
+  - Items:
+    - Direction: input
+      LocalId: 622924672
+      Name: name
+      Value: $.name
+      _clrType:
+      - inray.OPCRouter.BasePlugIn.Config.JSON.JsonTransferObjectNodeItem, inray.OPCRouter4.BasePlugIn
+    Name: JsonPath Items
+  JsonDocument: >-
+    {
+        "name": "a"
+    }
+  LocalId: 986811753
+  PlugIn: BasePlugInConfig
+  PosX: 500
+  PosY: 160
+  _clrType:
+  - inray.OPCRouter.BasePlugIn.Config.JSON.JsonWriteTransferObjectConfig, inray.OPCRouter4.BasePlugIn

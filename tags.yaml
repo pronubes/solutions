@@ -2,15 +2,15 @@ FormatVersion: 1
 Tags:
   Influx:
     DisplayName: "InfluxDB"
-    BackgroundColor: "#22ADF6"
+    BackgroundColor: "#4f82b5"
     TextColor: "white"
   MQTT:
     DisplayName: "MQTT"
-    BackgroundColor: "#660066"
+    BackgroundColor: "#606"
     TextColor: "white"
   OPC:
     DisplayName: "OPC"
-    BackgroundColor: "#008080"
+    BackgroundColor: "#005499"
     TextColor: "white"
   MDC:
     DisplayName:
@@ -18,16 +18,22 @@ Tags:
       EN: "Multi Datachange Trigger"
   REST:
     DisplayName: "REST"
-    BackgroundColor: "#4DA3FF"
+    BackgroundColor: "#002b51"
     TextColor: "white"
   DB:
     DisplayName:
       DE: "Datenbank"
       EN: "Database"
-    BackgroundColor: "#003366"
+    BackgroundColor: "#4DA3FF"
     TextColor: "white"
   AI:
     DisplayName:
       DE: "KI"
       EN: "AI"
-    BackgroundColor: "#833AB4; background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);"
+    BackgroundColor: "var(--or-primary); background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%)"
+  Notifications:
+    DisplayName:
+      DE: "Benachrichtigungen"
+      EN: "Notifications"
+    BackgroundColor: "#6600cc"
+    TextColor: "white"

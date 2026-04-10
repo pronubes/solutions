@@ -4,7 +4,7 @@ InitialValue:
   VariantType: System.Int64, System.Private.CoreLib
   _clrType:
   - inray.SDK.Data.YamlSerializer.YamlVariant, inray.SDK.Data
-Name: trigger2
+Name: Trigger2
 VariableType: Int64
 _clrType:
 - inray.OPCRouter.VariablesPlugIn.Config.Variable, inray.OPCRouter4.VariablesPlugIn
