@@ -9,7 +9,7 @@ TransferObjects:
   Endpoint: /ui
   GridSnapPixel: 9
   Groups:
-  - Name: Request-Parameter
+  - Name: Request parameters
     _clrType:
     - inray.OPCRouter.RestPlugIn.Server.Config.RequestParameterGroup, inray.OPCRouter4.RestPlugIn
   - Items:
@@ -75,7 +75,7 @@ TransferObjects:
   GridSnapPixel: 3
   Groups:
   - GroupType: 1052
-    Name: Platzhalter
+    Name: Placeholder
     _clrType:
     - inray.OPCRouter.BasePlugIn.Config.TextReplace.PlaceholderGroup, inray.OPCRouter4.BasePlugIn
   - GroupType: 1053
@@ -84,7 +84,7 @@ TransferObjects:
       Name: Content
       _clrType:
       - inray.OPCRouter.BasePlugIn.Config.TextReplace.TextReplaceTransferObjectItem, inray.OPCRouter4.BasePlugIn
-    Name: Inhalt
+    Name: Content
     _clrType:
     - inray.OPCRouter.BasePlugIn.Config.TextReplace.ContentGroup, inray.OPCRouter4.BasePlugIn
   LocalId: 1961016320

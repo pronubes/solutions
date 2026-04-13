@@ -109,7 +109,7 @@ TransferObjects:
     - Direction: input
       LocalId: 177692385
       Name: RPM
-    Name: Variablen
+    Name: Variables
     _clrType:
     - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
   - Items:
