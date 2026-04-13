@@ -27,7 +27,7 @@ A **Solution** consists of:
 
 Solutions can include:
 
-- Connections  
-- Plug-in configurations  
+- Flows  
+- Connector configurations  
 - Settings for pronubes Edge
 - And more
