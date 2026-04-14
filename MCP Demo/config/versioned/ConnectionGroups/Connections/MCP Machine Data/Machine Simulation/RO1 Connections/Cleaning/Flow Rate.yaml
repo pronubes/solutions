@@ -140,7 +140,7 @@ TransferObjects:
     - Direction: input
       LocalId: 1598699256
       Name: T
-    Name: Variablen
+    Name: Variables
     _clrType:
     - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
   - Items:

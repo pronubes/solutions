@@ -42,7 +42,7 @@ TransferObjects:
     - Direction: input
       LocalId: 1461217675
       Name: Progress
-    Name: Variablen
+    Name: Variables
     _clrType:
     - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
   - Items:
@@ -145,7 +145,7 @@ TransferObjects:
     - Direction: input
       LocalId: 110160426
       Name: Temperature
-    Name: Variablen
+    Name: Variables
     _clrType:
     - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
   - Items:

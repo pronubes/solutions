@@ -25,7 +25,7 @@ TransferObjects:
   Endpoint: /get_machine_data
   GridSnapPixel: 6
   Groups:
-  - Name: Request-Parameter
+  - Name: Request parameters
     _clrType:
     - inray.OPCRouter.RestPlugIn.Server.Config.RequestParameterGroup, inray.OPCRouter4.RestPlugIn
   - Items:
@@ -249,7 +249,7 @@ TransferObjects:
       Typ: String
       _clrType:
       - inray.OPCRouter.BasePlugIn.Config.TextReplace.TextReplaceTransferObjectItem, inray.OPCRouter4.BasePlugIn
-    Name: Platzhalter
+    Name: Placeholder
     _clrType:
     - inray.OPCRouter.BasePlugIn.Config.TextReplace.PlaceholderGroup, inray.OPCRouter4.BasePlugIn
   - GroupType: 1053
@@ -258,7 +258,7 @@ TransferObjects:
       Name: Content
       _clrType:
       - inray.OPCRouter.BasePlugIn.Config.TextReplace.TextReplaceTransferObjectItem, inray.OPCRouter4.BasePlugIn
-    Name: Inhalt
+    Name: Content
     _clrType:
     - inray.OPCRouter.BasePlugIn.Config.TextReplace.ContentGroup, inray.OPCRouter4.BasePlugIn
   LocalId: 732380285
@@ -319,12 +319,12 @@ TransferObjects:
       Name: Item path
       _clrType:
       - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
-    Name: Ausgabe
+    Name: Output
   - Items:
     - Direction: input
       LocalId: 742300921
       Name: Dynamic address
-    Name: Eingabe
+    Name: Input
   LocalId: 1152091159
   PlugIn: UAServer2408301209-223846937-1801FB34-00002707
   PosX: 1080

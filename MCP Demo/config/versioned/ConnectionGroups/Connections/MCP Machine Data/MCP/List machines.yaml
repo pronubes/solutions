@@ -15,7 +15,7 @@ TransferObjects:
   Endpoint: /list_machines
   GridSnapPixel: 18
   Groups:
-  - Name: Request-Parameter
+  - Name: Request parameters
     _clrType:
     - inray.OPCRouter.RestPlugIn.Server.Config.RequestParameterGroup, inray.OPCRouter4.RestPlugIn
   - Items:
@@ -119,7 +119,7 @@ TransferObjects:
     - Direction: input
       LocalId: 860735016
       Name: Path
-    Name: Variablen
+    Name: Variables
     _clrType:
     - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerVariablesGroup, inray.OPCRouter4.BasePlugIn
   - Items:
@@ -187,7 +187,7 @@ TransferObjects:
       Name: Item path
       _clrType:
       - inray.OPCRouter.OPCPlugIn.Runtime.OPCTransferObjectItem, inray.OPCRouter4.OPCPlugIn
-    Name: Ausgabe
+    Name: Output
   Included:
   - FilterValue: Status
     LocalId: 1272006843

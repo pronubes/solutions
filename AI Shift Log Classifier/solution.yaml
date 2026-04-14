@@ -50,7 +50,7 @@ Parameters:
     HelpText:
       DE: "Name der Verbindung, die den REST Trigger mit der AI-Verarbeitung verbindet."
       EN: "Name of the connection that links the REST trigger with AI processing."
-    Default: "AI-Trigger"
+    Default: "AI Trigger"
   web_trigger_connection_name:
     Type: "FileName"
     Label:
@@ -59,4 +59,4 @@ Parameters:
     HelpText:
       DE: "Name der Verbindung, die den API-Aufruf mit der JSON-Aufbereitung verbindet."
       EN: "Name of the connection that links the API call with JSON preparation."
-    Default: "Web-Trigger"
+    Default: "Web Trigger"
