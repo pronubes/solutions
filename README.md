@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://opc-router.com/?utm_source=GitHub&utm_medium=Solutions&utm_campaign=OpcRouterSolutions">
-    <img src="img/pronubes_logo.png" alt="Logo" width="400>
+    <img src="img/pronubes_logo.png" alt="Logo">
   </a>
   <br />
   <br />
