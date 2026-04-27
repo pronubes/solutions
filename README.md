@@ -20,7 +20,7 @@
 
 ## Overview  
 
-This repository contains **Solutions** designed for use with pronubes Edge.  
+This repository contains **Solutions** designed for use with **pronubes Edge**.  
 A **Solution** is a pre‑structured full or partial project for pronubes Edge that includes configurable parameters.  
 These parameters allow you to tailor the Solution to your specific environment before importing it into pronubes Edge.
 
