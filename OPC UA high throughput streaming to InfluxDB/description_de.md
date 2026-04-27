@@ -1,4 +1,4 @@
-Diese Solution enthält ein für den **Multi Datachange Trigger** optimiertes **OPC UA Client Plug-in** und ein **InfluxDB Plug-in**. Beide Plug-ins sind für einen **hohen Datendurchsatz** optimiert.
+Diese Solution enthält einen für den **Multi Datachange Trigger** optimierten **OPC UA Client Connector** und einen **InfluxDB Connector**. Beide Connectors sind für einen **hohen Datendurchsatz** optimiert.
 
 ##### Vorgenommene Optimierungen
 
@@ -9,4 +9,4 @@ Diese Solution enthält ein für den **Multi Datachange Trigger** optimiertes **
 * InfluxDB
   * Es werden gestapelte/asynchrone Inserts verwendet.
 
-Die enthaltene Verbindung realisiert die Übertragung der Daten aus dem Multi Datachange Trigger an eine InfluxDB.
+Der enthaltene Flow realisiert die Übertragung der Daten aus dem Multi Datachange Trigger an eine InfluxDB.

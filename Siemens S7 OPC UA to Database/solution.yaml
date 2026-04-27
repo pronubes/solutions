@@ -22,8 +22,8 @@ Parameters:
   siemens_s7_mssql_instance_name:
     Type: "FileName"
     Label:
-      DE: "Microsoft SQL Plug-in Name"
-      EN: "Microsoft SQL Plug-in name"
+      DE: "Microsoft SQL Connector Name"
+      EN: "Microsoft SQL Connector name"
     HelpText:
       DE: "Eindeutiger Name für die Microsoft SQL Instanz"
       EN: "Unique name for the Microsoft SQL instance"
@@ -39,11 +39,11 @@ Parameters:
   siemens_s7_to_database_connection_name:
     Type: "FileName"
     Label:
-      DE: "Verbindungsname"
-      EN: "Connection name"
+      DE: "Flow-Name"
+      EN: "Flow name"
     HelpText:
-      DE: "Name der Verbindung, mit der die Daten in die Datenbank geschrieben werden."
-      EN: "Name of the connection that writes the data to the database."
+      DE: "Name des Flow, mit dem die Daten in die Datenbank geschrieben werden."
+      EN: "Name of the Flow that writes the data to the database."
     Default: "OPC to Database"
   MSSQL_Server:
     Type: "String"

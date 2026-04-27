@@ -6,8 +6,8 @@ DisplayName:
   DE: "Siemens S7 OPC UA Anbindung"
   EN: "Siemens S7 OPC UA connection"
 ShortDescription:
-  DE: "OPC UA Plug-in für die Anbindung einer Siemens S7 Steuerung"
-  EN: "OPC UA plug-in for connecting to a Siemens S7 PLC"
+  DE: "OPC UA Connector für die Anbindung einer Siemens S7 Steuerung"
+  EN: "OPC UA Connector for connecting to a Siemens S7 PLC"
 Parameters:
   S7_instance_name:
     Type: "FileName"

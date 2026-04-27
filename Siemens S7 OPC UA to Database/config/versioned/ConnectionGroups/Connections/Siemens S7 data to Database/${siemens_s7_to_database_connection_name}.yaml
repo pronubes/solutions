@@ -55,6 +55,6 @@ TransferObjects:
   PlugIn: BasePlugInConfig
   PosX: 840
   PosY: 20
-  Summary: <p>The Siemens S7 access data is preselected in the OPC Data Access Transfer Object.</p><p><br></p><p>For this connection to be functional the OPC items to be read must be configured.</p><p>And the DB Insert Transfer object needs to be configured with a table and columns.</p>
+  Summary: <p>The Siemens S7 access data is preselected in the OPC Data Access Transfer Object.</p><p><br></p><p>For this Flow to be functional the OPC items to be read must be configured.</p><p>And the DB Insert Transfer object needs to be configured with a table and columns.</p>
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.Note.NoteTransferObjectConfig, inray.OPCRouter4.BasePlugIn

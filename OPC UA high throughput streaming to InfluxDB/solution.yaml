@@ -32,8 +32,8 @@ Parameters:
   multi_datachange_influxdb_instance_name:
     Type: "FileName"
     Label:
-      DE: "Multi Datachange InfluxDB Plug-in Name"
-      EN: "Multi Datachange InfluxDB Plug-in name"
+      DE: "Multi Datachange InfluxDB Connector Name"
+      EN: "Multi Datachange InfluxDB Connector name"
     HelpText:
       DE: "Eindeutiger Name für die InfluxDB Instanz"
       EN: "Unique name for the InfluxDB instance"
@@ -81,11 +81,11 @@ Parameters:
   mdc_to_influx_connection_name:
     Type: "FileName"
     Label:
-      DE: "Verbindungsname"
-      EN: "Connection name"
+      DE: "Flow-Name"
+      EN: "Flow name"
     HelpText:
-      DE: "Name der Verbindung, die für das Senden von Daten an InfluxDB verwendet wird"
-      EN: "Name of the connection used for sending data to InfluxDB"
+      DE: "Name des Flows, der für das Senden von Daten an InfluxDB verwendet wird"
+      EN: "Name of the Flow used for sending data to InfluxDB"
     Default: "Multi Datachange Trigger to Influx"
   mdc_trigger_path:
     Type: "String"

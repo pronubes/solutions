@@ -45,18 +45,18 @@ Parameters:
   ai_trigger_connection_name:
     Type: "FileName"
     Label:
-      DE: "AI Trigger Verbindungsname"
-      EN: "AI trigger connection name"
+      DE: "AI Trigger Flow-Name"
+      EN: "AI trigger Flow name"
     HelpText:
-      DE: "Name der Verbindung, die den REST Trigger mit der AI-Verarbeitung verbindet."
-      EN: "Name of the connection that links the REST trigger with AI processing."
+      DE: "Name des Flows, der den REST Trigger mit der AI-Verarbeitung verbindet."
+      EN: "Name of the Flow that links the REST trigger with AI processing."
     Default: "AI Trigger"
   web_trigger_connection_name:
     Type: "FileName"
     Label:
-      DE: "Web Trigger Verbindungsname"
-      EN: "Web trigger connection name"
+      DE: "Web Trigger Flow-Name"
+      EN: "Web trigger Flow name"
     HelpText:
-      DE: "Name der Verbindung, die den API-Aufruf mit der JSON-Aufbereitung verbindet."
-      EN: "Name of the connection that links the API call with JSON preparation."
+      DE: "Name des Flows, der den API-Aufruf mit der JSON-Aufbereitung verbindet."
+      EN: "Name of the Flow that links the API call with JSON preparation."
     Default: "Web Trigger"

@@ -1,9 +1,9 @@
-Diese Solution enthält ein für die Anbindung einer Siemens S7 Steuerung optimiertes OPC UA Client Plug-in. Eine Verbindung realisiert die Übertragung der Daten von der Siemens S7 Steuerung an eine MSSQL Datenbank.
+Diese Solution enthält einen für die Anbindung einer Siemens S7 Steuerung optimierten OPC UA Client Connector. Ein Flow realisiert die Übertragung der Daten von der Siemens S7 Steuerung an eine MSSQL Datenbank.
 
-Für die Verbindung mit einer S7 Steuerung wurden im Plug-in folgende Maßnahmen getroffen:
+Für die Verbindung mit einer S7 Steuerung wurden im Connector folgende Maßnahmen getroffen:
 
 * Der OPC UA Client benutzt ein Clientzertifikat
-* Der Lesemodus wurde auf Browse Path umgestellt
+* Der Lesemodus wurde auf Node-ID umgestellt
 
 ##### Hinweis
 
