@@ -52,7 +52,7 @@ TransferObjects:
     - inray.OPCRouter.RestPlugIn.Client.Config.RequestFileItemsGroup, inray.OPCRouter4.RestPlugIn
   LocalId: 131072
   PlugIn: 2402021319-350676956-50130D05-00006E59
-  PosX: 640
+  PosX: 660
   PosY: 160
   RequestFormat: application/json
   URL: "${rest_data_request_to_url}"
@@ -98,7 +98,7 @@ TransferObjects:
     Name: Result
   LocalId: 131076
   PlugIn: BasePlugInConfig
-  PosX: 240
+  PosX: 260
   PosY: 180
   StringToParse: CONCATENATE("Bearer ", "Token")
   _clrType:

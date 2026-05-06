@@ -88,7 +88,7 @@ TransferObjects:
   PlugIn: UAServer2408301209-223846937-1801FB34-00002707
   PlugInType: 3100
   PosX: 20
-  PosY: 320
+  PosY: 340
   _clrType:
   - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
 - ChangedUTCTimestamp: 2023-10-05T05:38:30.7160000Z

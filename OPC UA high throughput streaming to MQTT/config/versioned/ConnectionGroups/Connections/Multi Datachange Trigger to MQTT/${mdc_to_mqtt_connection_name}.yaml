@@ -77,7 +77,7 @@ TransferObjects:
   OPCAddress: "${mdc_trigger_path}"
   PlugIn: 2511121416-513116611-58016C87-00008789
   PosX: 20
-  PosY: 80
+  PosY: 60
   _clrType:
   - inray.OPCRouter.OPCPlugIn.Config.MultiDatachangeTrigger.MultiDatachangeTriggerConfig, inray.OPCRouter4.OPCPlugIn
 - ChangedUTCTimestamp: 2025-11-18T12:23:33.7840000Z
@@ -95,8 +95,8 @@ TransferObjects:
     - inray.OPCRouter.MqttPlugIn.MqttUserPropertyItemGroup, inray.OPCRouter4.MqttPlugIn
   LocalId: 1857722630
   PlugIn: 2511181223-397128238-C201E372-0000754A
-  PosX: 740
-  PosY: 20
+  PosX: 800
+  PosY: 40
   Topic: "${mqtt_topic}"
   _clrType:
   - inray.OPCRouter.MqttPlugIn.MqttTransferObjectConfig, inray.OPCRouter4.MqttPlugIn
@@ -175,6 +175,6 @@ TransferObjects:
   LocalId: 491076080
   PlugIn: BasePlugInConfig
   PosX: 500
-  PosY: 60
+  PosY: 40
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.JSON.JsonWriteTransferObjectConfig, inray.OPCRouter4.BasePlugIn

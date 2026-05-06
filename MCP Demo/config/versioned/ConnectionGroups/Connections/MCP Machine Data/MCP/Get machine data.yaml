@@ -155,7 +155,7 @@ TransferObjects:
     }
   LocalId: 1262440347
   PlugIn: BasePlugInConfig
-  PosX: 560
+  PosX: 600
   PosY: 60
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.JSON.JsonReadTransferObjectConfig, inray.OPCRouter4.BasePlugIn
@@ -193,7 +193,7 @@ TransferObjects:
   JsonTransform: "$map($distinct(fields), function($value, $index, $array) {\n	{\n		\"name\": $value,\n		\"value\": values[$index]\n	}\n})"
   LocalId: 256499884
   PlugIn: BasePlugInConfig
-  PosX: 560
+  PosX: 600
   PosY: 260
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.JSON.JsonTransformTransferObjectConfig, inray.OPCRouter4.BasePlugIn
@@ -228,7 +228,7 @@ TransferObjects:
     }
   LocalId: 1389769557
   PlugIn: BasePlugInConfig
-  PosX: 840
+  PosX: 900
   PosY: 260
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.JSON.JsonWriteTransferObjectConfig, inray.OPCRouter4.BasePlugIn
@@ -263,7 +263,7 @@ TransferObjects:
     - inray.OPCRouter.BasePlugIn.Config.TextReplace.ContentGroup, inray.OPCRouter4.BasePlugIn
   LocalId: 732380285
   PlugIn: BasePlugInConfig
-  PosX: 780
+  PosX: 860
   PosY: 80
   Text: bp=Objects/2:Machines/2:{machine_name};
   _clrType:
@@ -327,8 +327,8 @@ TransferObjects:
     Name: Input
   LocalId: 1152091159
   PlugIn: UAServer2408301209-223846937-1801FB34-00002707
-  PosX: 1080
-  PosY: 100
+  PosX: 1200
+  PosY: 80
   UseDynamicAddress: true
   _clrType:
   - inray.OPCRouter.OPCPlugIn.Config.MultiReadTransferObject.OPCMultiReadTransferObjectConfig, inray.OPCRouter4.OPCPlugIn

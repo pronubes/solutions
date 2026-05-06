@@ -60,7 +60,7 @@ TransferObjects:
   PlugIn: UAServer2408301209-223846937-1801FB34-00002707
   PlugInType: 3100
   PosX: 20
-  PosY: 160
+  PosY: 180
   _clrType:
   - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
 - ChangedUTCTimestamp: 2023-09-28T08:05:39.6570000Z
@@ -85,7 +85,7 @@ TransferObjects:
   LocalId: 1610716025
   PlugIn: BasePlugInConfig
   PosX: 420
-  PosY: 160
+  PosY: 180
   StringToParse: MIN(IF(RPM > 1, Progress + 0.5, Progress), 100)
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn
@@ -115,6 +115,6 @@ TransferObjects:
   PlugIn: UAServer2408301209-223846937-1801FB34-00002707
   PlugInType: 3100
   PosX: 900
-  PosY: 220
+  PosY: 240
   _clrType:
   - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
