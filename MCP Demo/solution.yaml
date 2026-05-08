@@ -22,9 +22,9 @@ Parameters:
   mcp_instance_name:
     Type: "FileName"
     Label:
-      DE: "MCP REST Client Name"
-      EN: "MCP REST Client name"
+      DE: "MCP REST Server Name"
+      EN: "MCP REST Server name"
     HelpText:
-      DE: "Eindeutiger Name für die MCP REST Client Instanz"
-      EN: "Unique name for the MCP REST Client instance"
+      DE: "Eindeutiger Name für die MCP REST Server Instanz"
+      EN: "Unique name for the MCP REST Server instance"
     Default: "MCP"
