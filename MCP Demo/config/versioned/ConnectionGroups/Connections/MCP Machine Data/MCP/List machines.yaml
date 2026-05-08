@@ -108,7 +108,7 @@ TransferObjects:
     }
   LocalId: 262118881
   PlugIn: BasePlugInConfig
-  PosX: 280
+  PosX: 300
   PosY: 160
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.JSON.JsonWriteTransferObjectConfig, inray.OPCRouter4.BasePlugIn
@@ -131,8 +131,8 @@ TransferObjects:
     - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerResultGroup, inray.OPCRouter4.BasePlugIn
   LocalId: 710027182
   PlugIn: BasePlugInConfig
-  PosX: 720
-  PosY: 140
+  PosX: 860
+  PosY: 160
   StringToParse: LEFT("Path", FIND("/", "Path")-1)
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn
@@ -197,8 +197,8 @@ TransferObjects:
   LocalId: 335056524
   OPCAddress: bp=Objects/2:Machines;
   PlugIn: UAServer2408301209-223846937-1801FB34-00002707
-  PosX: 1080
-  PosY: 140
+  PosX: 1220
+  PosY: 160
   _clrType:
   - inray.OPCRouter.OPCPlugIn.Config.MultiReadTransferObject.OPCMultiReadTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
 - ChangedUTCTimestamp: 2026-03-18T09:58:18.8910000Z
@@ -226,7 +226,7 @@ TransferObjects:
     }
   LocalId: 986811753
   PlugIn: BasePlugInConfig
-  PosX: 500
+  PosX: 580
   PosY: 160
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.JSON.JsonWriteTransferObjectConfig, inray.OPCRouter4.BasePlugIn

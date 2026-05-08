@@ -39,7 +39,7 @@ TransferObjects:
   PlugIn: UAServer2408301209-223846937-1801FB34-00002707
   PlugInType: 3100
   PosX: 480
-  PosY: 160
+  PosY: 180
   _clrType:
   - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
 - ChangedUTCTimestamp: 2023-09-26T06:43:58.2160000Z
@@ -57,7 +57,7 @@ TransferObjects:
   LocalId: 954810038
   PlugIn: BasePlugInConfig
   PosX: 20
-  PosY: 160
+  PosY: 180
   StringToParse: IF(RANDBETWEEN(0, 100) > 95, true, false)
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn

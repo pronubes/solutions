@@ -18,7 +18,7 @@ Parameters:
     HelpText:
       DE: "Eindeutiger Name für die Siemens S7 OPC UA Client Instanz"
       EN: "Unique name for the Siemens S7 OPC UA Client instance"
-    Default: "Siemens S7"
+    Default: "Siemens S7 Client"
   siemens_s7_mssql_instance_name:
     Type: "FileName"
     Label:
@@ -42,7 +42,7 @@ Parameters:
       DE: "Flow-Name"
       EN: "Flow name"
     HelpText:
-      DE: "Name des Flow, mit dem die Daten in die Datenbank geschrieben werden."
+      DE: "Name des Flows, mit dem die Daten in die Datenbank geschrieben werden."
       EN: "Name of the Flow that writes the data to the database."
     Default: "OPC to Database"
   MSSQL_Server:

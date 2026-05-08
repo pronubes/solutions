@@ -68,7 +68,7 @@ TransferObjects:
       - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
   LocalId: 65539
   PlugIn: VariablesPlugInConfig
-  PosX: 600
+  PosX: 680
   PosY: 300
   _clrType:
   - inray.OPCRouter.VariablesPlugIn.Config.VariablesTransferObjectConfig, inray.OPCRouter4.VariablesPlugIn

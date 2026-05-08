@@ -38,7 +38,7 @@ TransferObjects:
       - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
   LocalId: 1137383742
   PlugIn: VariablesPlugInConfig
-  PosX: 200
+  PosX: 160
   PosY: 200
   _clrType:
   - inray.OPCRouter.VariablesPlugIn.Config.VariablesTransferObjectConfig, inray.OPCRouter4.VariablesPlugIn
@@ -68,7 +68,7 @@ TransferObjects:
   PlugIn: UAServer2408301209-223846937-1801FB34-00002707
   PlugInType: 3100
   PosX: 20
-  PosY: 280
+  PosY: 300
   _clrType:
   - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
 - ChangedUTCTimestamp: 2023-10-04T11:20:21.6880000Z

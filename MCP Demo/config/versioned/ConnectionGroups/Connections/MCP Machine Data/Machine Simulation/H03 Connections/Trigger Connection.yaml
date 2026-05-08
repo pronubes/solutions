@@ -70,7 +70,7 @@ TransferObjects:
       - inray.OPCRouter.VariablesPlugIn.Runtime.VariablesTransferObjectItem, inray.OPCRouter4.VariablesPlugIn
   LocalId: 1933145763
   PlugIn: VariablesPlugInConfig
-  PosX: 240
+  PosX: 220
   PosY: 200
   _clrType:
   - inray.OPCRouter.VariablesPlugIn.Config.VariablesTransferObjectConfig, inray.OPCRouter4.VariablesPlugIn
@@ -133,7 +133,7 @@ TransferObjects:
   PlugIn: UAServer2408301209-223846937-1801FB34-00002707
   PlugInType: 3100
   PosX: 20
-  PosY: 340
+  PosY: 360
   _clrType:
   - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
 - ChangedUTCTimestamp: 2023-09-28T08:11:27.0800000Z
@@ -158,7 +158,7 @@ TransferObjects:
   LocalId: 194301596
   PlugIn: BasePlugInConfig
   PosX: 440
-  PosY: 360
+  PosY: 380
   StringToParse: IF(Faultrung = True, IF(Temperature > 14, Temperature - RANDBETWEEN(4, 7), Temperature), Temperature)
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn
@@ -194,7 +194,7 @@ TransferObjects:
   PlugIn: UAServer2408301209-223846937-1801FB34-00002707
   PlugInType: 3100
   PosX: 1300
-  PosY: 420
+  PosY: 440
   _clrType:
   - inray.OPCRouter.OPCPlugIn.Config.OPCTransferObjectConfig, inray.OPCRouter4.OPCPlugIn
 - ChangedUTCTimestamp: 2023-10-11T06:36:04.7480000Z
@@ -219,7 +219,7 @@ TransferObjects:
   LocalId: 1324890653
   PlugIn: BasePlugInConfig
   PosX: 440
-  PosY: 540
+  PosY: 580
   StringToParse: IF(S = True, MAX(RPM - RANDBETWEEN(15, 45), 1), RPM)
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.Calculator.TORechnerTransferObjectConfig, inray.OPCRouter4.BasePlugIn

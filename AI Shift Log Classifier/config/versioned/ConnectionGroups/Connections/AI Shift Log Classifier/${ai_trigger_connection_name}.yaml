@@ -106,7 +106,7 @@ TransferObjects:
     }
   LocalId: 640131805
   PlugIn: BasePlugInConfig
-  PosX: 220
+  PosX: 280
   PosY: 200
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.JSON.JsonReadTransferObjectConfig, inray.OPCRouter4.BasePlugIn
@@ -179,7 +179,7 @@ TransferObjects:
   LocalId: 1713112773
   Method: Post
   PlugIn: 2602171018-123339128-E04E75F6-0000D490
-  PosX: 1040
+  PosX: 1380
   PosY: 20
   RequestFormat: application/json
   URL: /v1/chat/completions
@@ -203,8 +203,8 @@ TransferObjects:
     - inray.OPCRouter.BasePlugIn.Config.TextReplace.ContentGroup, inray.OPCRouter4.BasePlugIn
   LocalId: 1726691462
   PlugIn: BasePlugInConfig
-  PosX: 400
-  PosY: 180
+  PosX: 520
+  PosY: 160
   Text: >-
     You are an AI assistant for automatic structuring of shift log entries. Parse free-text input from technicians into standardized JSON format.
 
@@ -305,8 +305,8 @@ TransferObjects:
     }
   LocalId: 1966158774
   PlugIn: BasePlugInConfig
-  PosX: 660
-  PosY: 180
+  PosX: 840
+  PosY: 200
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.JSON.JsonWriteTransferObjectConfig, inray.OPCRouter4.BasePlugIn
 - ChangedUTCTimestamp: 2026-02-17T13:24:51.0210000Z
@@ -331,7 +331,7 @@ TransferObjects:
   JsonDocument: '{}'
   LocalId: 1153870495
   PlugIn: BasePlugInConfig
-  PosX: 860
+  PosX: 1140
   PosY: 260
   _clrType:
   - inray.OPCRouter.BasePlugIn.Config.JSON.JsonReadTransferObjectConfig, inray.OPCRouter4.BasePlugIn
